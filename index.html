@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<script src="static/js/jquery-1.11.0.min.js"></script>
+	<script src="static/js/bootstrap.js"></script>
+	<script src="static/js/portfolio.js"></script>
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/common_iteration_2.css">
+	<link rel="stylesheet" href="static/css/common.css">
+</head>
+<body>
+	<!-- <nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/portfolio">Portfolio</a>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li><a href="/portfolio/index_default.html">Default Template</a></li>
+				<li><a href="/portfolio/index_iteration_1.html">Version 1</a></li>
+				<li class="active"><a href="/portfolio/index_iteration_2.html">Version 2</a></li>
+				<li><a href="/portfolio/index_iteration_3.html">Version 3</a></li>
+				<li>
+					<a href="https://github.com/ashrock/portfolio_templates" target="_blank">
+						<span class="git-icon"></span>&nbsp;Check the codes in Github
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	 -->
+	<div id="wrapper" class="container">
+		<div id="student_description">
+			<div class="media-group">
+				<div class="media">
+					<img src="static/img/Face.jpg" alt="" class="img-responsive img-thumbnail media-object pull-left">
+					<div class="media-body">
+						<h1 class="media-heading">Akash Jagannathan's<small> Portfolio</small></h1>
+						<p>Akash is an enthusiastic full-stack web developer, cricket player, and hard-core relaxer.  Originally a neuroscientist, Akash made the switch to computer science after finding passion in expressing complex logic through programming languages.  While by no means averse to encountering simple problems, he deeply enjoys the indescribable reward of struggling immensely with a logical problem and eventually finding a solution.</p>
+					</div>
+				</div>
+			</div>
+			<ul id="skill_set_list" class="nav nav-pills">
+				<li class="active"><a href="#web_fun" data-toggle="tab">HTML, CSS, and JavaScript</a></li>
+				<li><a href="#python_django" data-toggle="tab">Python and Django</a></li>
+				<!-- <li><a href="#ruby_rails" data-toggle="tab">Python and Django</a></li> -->
+			</ul>
+		</div>
+		<div id="portfolio_content">
+			<div id="portfolio_body" class="tab-content">
+				<div class="panel-body tab-pane active" id="web_fun">
+					<div class="project_list list-group">
+						<a href="http://village88.com" class="project_link list-group-item" data-description="A simple rendition of the popular game Pac-Man, with Pac-Woman making an appearance.  Highlights include the face of pac-man/pac-woman changing direction based on which way they are moving, a psedo-randomly moving ghost, and cherries worth 50 points." data-title="Pac-Man" data-technologies="HTML, CSS, and JavaScript">
+							<img src="static/img/village88.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">Pac-Man</h5>
+						</a>
+						<a href="http://codingdojo.com" class="project_link list-group-item" data-description="A game designed entirely using HTML, CSS, and JavaScript.  Features include the ability to move the hero, collision detection, and an explosion sound when a bullet hits the target." data-title="1942" data-technologies="HTML, CSS, and JavaScript.">
+							<img src="static/img/codingdojo.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">1942</h5>
+						</a>
+						<a href="http://spottrender.com" class="project_link list-group-item" data-description="Consists of bouncing ball(s) that merge upon collision (click to add a ball).  Clicking and holding down increases the ball size proportionately to the amount of time the click was held.  Walls resize based on user adjustment of window size." data-title="JS Circles" data-technologies="HTML and JavaScript">
+							<img src="static/img/spottrender.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">JS Circles</h5>
+						</a>
+					</div>
+					<div class="preview_pane_container">
+						<h4></h4>
+						<p class="project_description"></p>
+						<p class="technologies_used"></p>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="preview_pane"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="panel-body tab-pane" id="python_django">
+					<div class="project_list list-group">
+						<a href="https://help.codingdojo.com" class="project_link list-group-item" data-description="An application allowing users to log-in/register, manage other users, post messages and comments on each other's walls, and edit their personal information.  Includes full-fledged login/registration functionality including back-end validations.  Utilizes knowledge of MVC architecture and password encryption." data-title="User Dashboard App" data-technologies="HTML/CSS, JQuery, JavaScript, Python, Django, and Bootstrap.">
+							<img src="static/img/help.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">User Dashboard App</h5>
+						</a>
+						<a href="http://node.codingdojo.com" class="project_link list-group-item" data-description="An app combining Django and AJAX.  Highlights include partial views, no submit buttons anywhere yet multiple forms and no page reloads (thanks AJAX!).  While it may not look pretty, it took a lot of work to be able to dynamically append HTML content (hint: there were no tables used, only divs)" data-title="Ajax Pagination App" data-technologies="HTML/CSS, JavaScript, JQuery, Python, Django.">
+							<img src="static/img/node.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">Ajax Pagination</h5>
+						</a>
+						<a href="http://algorithm.codingdojo.com" class="project_link list-group-item" data-description="A nifty app utilizing the OpenCV library that is able to detect the number of faces in an uploaded PNG image with decent accuracy." data-title="Face Detection App" data-technologies="HTML/CSS, Python, Django, OpenCV, Bootstrap.">
+							<img src="static/img/algorithm.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">Face Detection App</h5>
+						</a>
+					</div>
+
+					<div class="preview_pane_container">
+						<h4></h4>
+						<p class="project_description"></p>
+						<p class="technologies_used"></p>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="preview_pane"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+<!--
+				<div class="panel-body tab-pane" id="ruby_rails">
+					<div class="project_list list-group">
+						<a href="http://codingdojo.herokuapp.com" class="project_link list-group-item" data-description="This is a site where Coding Dojo bootcamp students interact and advertise their skills to the recruiters. The students can post their resumes and portfolios on this site." data-title="Recruiters' Library App" data-technologies="HTML/CSS, Ruby on Rails, Javascripts, and Jquery.">
+							<img src="static/img/recruiters.png" class="center-block img-thumbnail">
+							<div class="clearfix"></div>
+							<h5 class="list-group-item-heading text-center">Recruiters' Library App</h5>
+						</a>
+					</div>
+					<div class="preview_pane_container">
+						<h4></h4>
+						<p class="project_description"></p>
+						<p class="technologies_used"></p>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="preview_pane"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
