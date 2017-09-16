@@ -76,3 +76,17 @@ body{
     height: 11px;
     width: 12px;
 }
+
+.linkedin-icon{
+  background: url('../img/linkedin.gif');
+  display: inline-block;
+  height: 11px;
+  width: 12px;
+}
+
+.facebook-icon{
+  background: url('../img/facebook.gif');
+  display: inline-block;
+  height: 11px;
+  width: 12px;
+}
