@@ -84,6 +84,13 @@ body{
   width: 12px;
 }
 
+.twitter-icon{
+    background: url('../img/twitter.png');
+    display: inline-block;
+    height: 11px;
+    width: 15px;
+  }
+
 .facebook-icon{
   background: url('../img/facebook.gif');
   display: inline-block;
