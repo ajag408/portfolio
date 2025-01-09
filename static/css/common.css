@@ -86,6 +86,7 @@ body{
 
 .twitter-icon{
     background: url('../img/twitter.png');
+    background-size: 14px 14px;  /* Add this line */
     display: inline-block;
     height: 11px;
     width: 15px;
