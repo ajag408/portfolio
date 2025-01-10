@@ -10,23 +10,42 @@ body{
 	background: #fff;
 	padding: 10px;
 }
-#skill_set_list{
+/* #skill_set_list{
 	font-weight: bold;
 	margin-top: 10px;
 	border-bottom: 0px;
+	display: flex;
+    flex-wrap: wrap;
+} */
+
+#skill_set_list,
+#skill_set_list.nav-tabs {
+	font-weight: bold;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 15px !important;
+    border-bottom: 0 !important;
 }
-#skill_set_list li a{
-	color: #fff;
-	margin: 0px;
-	padding: 8px 10px;
+
+#skill_set_list > li,
+#skill_set_list.nav-tabs > li {
+    margin-right: 15px !important;
+    margin-bottom: 0 !important;
+    float: none !important;
 }
-#skill_set_list li.active a, #skill_set_list li:hover a{
-	background: rgba(0,0,0, 0.75);
-	border-color: transparent;
+
+#skill_set_list > li > a,
+#skill_set_list.nav-tabs > li > a {
+    padding: 8px 20px !important;
+    margin: 0 !important;
 }
-#skill_set_list li{
-	margin-bottom: 0px;
+
+#skill_set_list > li:last-child,
+#skill_set_list.nav-tabs > li:last-child {
+    margin-right: 0 !important;
 }
+
 #portfolio_content{
 	background: rgba(0,0,0,0.75);
 }
